@@ -14,7 +14,8 @@ func main() {
 			syscall.CLONE_NEWUTS |
 			syscall.CLONE_NEWIPC |
 			syscall.CLONE_NEWNS |
-			syscall.CLONE_NEWUSER,
+			syscall.CLONE_NEWUSER |
+			syscall.CLONE_NEWNET,
 		UidMappings: []syscall.SysProcIDMap{{
 			ContainerID: 1,
 			HostID:      syscall.Getuid(),
