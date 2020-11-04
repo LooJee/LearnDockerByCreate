@@ -22,4 +22,3 @@ func NewParentProcess(tty bool, command string) *exec.Cmd {
 	}
 	return cmd
 }
-
